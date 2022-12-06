@@ -1,133 +1,47 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="registration.css" />
-    <link rel="stylesheet" href="navigation-bar.css" />
-    <title>Register</title>
-  </head>
-  <body>
-    <nav>
-      <div class="wrapper">
-        <img class="nav-logo" src="Upraise-logo-2.png" alt="" />
-        <div class="logo"><a href="#">UPRAISE</a></div>
-        <input type="radio" name="slider" id="menu-btn" />
-        <input type="radio" name="slider" id="close-btn" />
-        <ul class="nav-links">
-          <label for="close-btn" class="btn close-btn"
-            ><i class="fas fa-times"></i
-          ></label>
-          <li><a href="main.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li>
-            <a href="#" class="desktop-item">Log in/Sign up</a>
-            <input type="checkbox" id="showDrop" />
-            <label for="showDrop" class="mobile-item">Log in/Sign up</label>
-            <ul class="drop-menu">
-              <li><a href="Register-now-button.html">Sign up</a></li>
-              <li><a href="Register-now-button.html">log in</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="desktop-item">Menu</a>
-            <input type="checkbox" id="showMega" />
-            <label for="showMega" class="mobile-item">Menu</label>
-            <div class="mega-box">
-              <div class="content">
-                <div class="row">
-                  <img src="Upraise-logo-2.png" alt="" />
-                </div>
-                <div class="row">
-                  <header>Services</header>
-                  <ul class="mega-links">
-                    <li><a href="#Features">Get Mentorship</a></li>
-                    <li><a href="#Features">Raise Funds</a></li>
-                    <li><a href="#Features">Revenue Growth</a></li>
-                    <li><a href="#">Hunt Co-Founders </a></li>
-                  </ul>
-                </div>
-                <div class="row">
-                  <header>Features</header>
-                  <ul class="mega-links">
-                    <li><a href="#">Challenges</a></li>
-                    <li><a href="#Features">Programmes</a></li>
-                    <li><a href="#Blog-Section">Blogs</a></li>
-                    <li><a href="#">Newsletter</a></li>
-                  </ul>
-                </div>
-                <div class="row">
-                  <header>Other</header>
-                  <ul class="mega-links">
-                    <li><a href="#">Our Socials</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li>
-                      <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSezQDSmG22WLQtOGcn4EfwzoDdsi_q5TEFS5qhLv2BgcFMmBQ/viewform"
-                        >feedback</a
-                      >
-                    </li>
-                    <li><a href="#Contact-US">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <a href="#" class="desktop-item" href="#">Profile </a>
-            <input type="checkbox" id="showDrop" />
-            <label for="showDrop" class="mobile-item">Profile</label>
-            <ul class="drop-menu">
-              <li><a href="profilecard.html">View profile</a></li>
-              <li>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSezQDSmG22WLQtOGcn4EfwzoDdsi_q5TEFS5qhLv2BgcFMmBQ/viewform"
-                  >Feedback</a
-                >
-              </li>
-              <li><a href="Register-now-button.html">Log out</a></li>
-            </ul>
-          </li>
-        </ul>
-        <label for="menu-btn" class="btn menu-btn"
-          ><i class="fas fa-bars"></i
-        ></label>
-      </div>
-    </nav>
-    <section>
-      <div class="color"></div>
-      <div class="color"></div>
-      <div class="color"></div>
-      <div class="square" style="--i:0;"></div>
-        <div class="square" style="--i:1;"></div>
-        <div class="square" style="--i:2;"></div>
-        <div class="square" style="--i:3;"></div>
-        <div class="square" style="--i:4;"></div>
-        <div class="container">
-      <div class="form">
-        
-        <form >
-          <form>
-            <p class="name">Name</p>
-              <div class="inputBox">
-                <input type="text" placeholder="Username">
-          
-      </div>
-      <div class="inputBox">
-        <p class="name">Set Password</p>
-            <input type="password" placeholder="Password">
-            </div>
-            <div class="inputBox">
-              <p class="name">Email Id</p>
-              <input type="email"  placeholder="upraise@gmail.com">
-             </div>
+<html>
+<head>
+  <title>Registration system PHP and MySQL</title>
+  <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+  <div class="header">
+  	<h2>Register</h2>
+  </div>
+	
+  <form method="post" action="register.php">
+  	
+	<div class="input-group">
+  	  <label>Full name</label>
+  	  <input type="full_name" name="full_name" placeholder="Enter your full name" value="">
+  	</div>
+	<div class="input-group">
+  	  <label>Phone Number</label>
+  	  <input type="phone_number" name="phone_number" placeholder="Enter your phone number" value="">
+  	</div>
+  	<div class="input-group">
+  	  <label>Username</label>
+  	  <input type="text" name="username" placeholder="Enter your username" value="">
+  	</div>
+  	<div class="input-group">
+  	  <label>Email</label>
+  	  <input type="email" name="email" placeholder="Enter your Email ID" value="">
+  	</div>
+  	<div class="input-group">
+  	  <label>Password</label>
+  	  <input type="password" name="password_1" placeholder="Enter your password">
+  	</div>
+  	<div class="input-group">
+  	  <label>Confirm password</label>
+  	  <input type="password" name="password_2" placeholder="Confirm your password">
+  	</div>
 
-             <button class="submit">
-              SUBMIT
-             </button>
-             <br>
-            <div>    
-            <button href="" class="sign-up-with-google"><p><b>Sign up with Google</b></p></button>
-            </div>
-    </section>
 
-  </body>
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user">Register</button>
+  	</div>
+  	
+  </form>
+</body>
 </html>
