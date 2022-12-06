@@ -1,0 +1,21 @@
+.blog-title {
+    font-size: 50px;
+    margin-left: 50px;
+
+
+    font-family: 'JejuGothic';
+    font-style: normal;
+    font-weight: 1;
+    font-size: 36px;
+    line-height: 76px;
+    color: #000000;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.blog-content {
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.blog-images {
+    padding-left: 35%;
+}
