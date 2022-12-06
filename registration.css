@@ -1,248 +1,74 @@
-@import url('https://fonts.googleleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: none;
-    font-family: 'Poppins', sans-serif;
+/* 81% of storage used … You can clean up space or get more storage for Drive, Gmail and Google Photos. */
+* {
+  margin: 0px;
+  padding: 0px;
+  
 }
-
 body {
-    overflow: hidden;
+  font-size: 120%;
+  background: linear-gradient(to bottom, #3261e2, #55ace2);
+  padding-bottom: 500px;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #3261e2, #55ace2);
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #0313ff;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
 }
-
-section .color {
-    position: absolute;
-    filter: blur(150px); // pink-white background color
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.75);
 }
-
-section .color:nth-child(1) {
-    top: -350px;
-    width: 600px;
-    height: 600px;
-    background: #637eff;
+.input-group {
+  margin: 10px 0px 10px 0px;
 }
-
-section .color:nth-child(2) {
-    bottom: -150px;
-    left: 100px;
-    width: 500px;
-    height: 500px;
-    background: #0632ff;
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
 }
-
-section .color:nth-child(3) {
-    bottom: 50px;
-    right: 100px;
-    width: 300px;
-    height: 300px;
-    background: whitesmoke
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
-
- .box {
-    position: relative;
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #0000ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
-.box .square {
-    position: absolute;
-    backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    animation-delay: calc(-1s * var(--i));
-    animation: animate 10s linear infinite;
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
 }
-
-@keyframes animate {
-
-    0%,
-    100% {
-        transform: translateY(-40px);
-    }
-
-    50% {
-        transform: translateY(40px);
-    }
-}
-
-.box .square:nth-child(1) {
-    top: 150px;
-    left: -100px;
-    width: 120px;
-    height: 120px;
-
-}
-
-.box .square:nth-child(2) {
-    top: -50px;
-    right: -60px;
-    width: 100px;
-    height: 100px;
-    z-index: 2;
-}
-
-.box .square::nth-child(3) {
-    bottom: 50px;
-    right: -60px;
-    width: 80px;
-    height: 80px;
-    z-index: 2;
-}
-
-.box .square::nth-child(4) {
-    bottom: -80px;
-    left: 100px;
-    width: 50px;
-    height: 50px;
-}
-
-.box .square::nth-child(5) {
-    top: -80px;
-    left: 140px;
-    width: 60px;
-    height: 60px;
-}
-
-.container {
-    position: relative;
-    width: 400px;
-    min-height: 400px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.form {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-}
-
-.form h2 {
-    position: relative;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 600;
-    Letter-spacing: 1px;
-    margin-bottom: 40px;
-}
-
-.form h2::before {
-    left: 0;
-    width: 80px;
-    height: 4px;
-    content: '';
-    bottom: -10px;
-    background: #fff;
-    position: absolute;
-}
-
-.form .inputBox {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.form .inputBox input {
-    width: 100%;
-    color: #fff;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    padding: 8px 16px;
-    letter-spacing: 1px;
-    border-radius: 35px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(29, 20, 20, 0.5);
-    box-shadow: 0 5px 15px transparent;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    margin-top: 0%;
-}
-
-.form .inputBox input::placeholder {
-    color: #fff;
-}
-
-.form .inputBox input[type="submit"] {
-    background: #fff;
-    color: #666;
-    width: 100%;
-    cursor: pointer;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.forget {
-    margin-top: 5px;
-    color: #fff;
-}
-
-.forget a {
-    color: #fff;
-    font-weight: 600;
-} 
-.name{
-    color: white;
-    font-style: normal;
-    font-weight:100;
-    font-size: larger;
-    margin-left: 6%;
-    margin-bottom: 0%;
-}
-
-.submit{
-    color: rgb(0, 0, 0);
-        border: none;
-        outline: none;
-        font-size: 16px;
-        padding: 8px 16px;
-        letter-spacing: 1px;
-        border-radius: 35px;
-        background: #637eff;
-        border: 1px solid rgba(30, 22, 22, 0.5);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        margin-top: 8%;
-        margin-bottom: 8%;
-        margin-left: 0px;
-        cursor: pointer;
-}
-.submit:hover{
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 1.15);
-        transform: scale(1.2);
-}
-.sign-up-with-google {
-    color: rgb(0, 0, 0);
-        border: none;
-        outline: none;
-        font-size: 16px;
-        padding: 8px 16px;
-        letter-spacing: 1px;
-        border-radius: 35px;
-        background: rgba(255, 255, 255, 0.984);
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        margin-top: 0%;
-        margin-left: 40px;
+.success {
+  color: #000000; 
+  background: #d8def0; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.75);
 }
