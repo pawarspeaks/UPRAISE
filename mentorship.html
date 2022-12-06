@@ -1,10 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="mentorship.css" />
-    <link rel="stylesheet" href="navigation-bar.css" />
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footer.css"
+     <!-- <link rel="stylesheet" href="mentorship.css"  />  -->
+    <link rel="stylesheet" href="navigation-bar.css" !important />
+    <link rel="stylesheet" href="main.css" !important/>
+    <link rel="stylesheet" href="footer.css" !important/>
+
+    <style>
+      .title {
+  margin-left: 50px;
+  font-family: 'JejuGothic';
+  font-style: normal;
+  font-weight: 1;
+  font-size: 50px;
+  line-height: 76px;
+  color: #000000;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 43%;
+}
+
+.card,
+.card .img-area,
+.social-icons a,
+.buttons button{
+background-color: rgba(255,255,255,0.13);
+border-radius: 10px;
+backdrop-filter: blur(10px);
+border: 2px solid rgba(255,255,255,0.1);
+box-shadow: 0 0 40px rgba(8,7,16,0.6);
+margin-left: 7%;
+}
+
+.card{
+position: relative;
+width: 350px;
+padding: 30px;
+border-radius: 10px;
+display: inline-block;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}                                      
+
+.card .img-area{                    
+height: 150px;
+width: 150px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.img-area .inner-area{
+height: calc(100% - 25px);
+width: calc(100% - 25px);
+border-radius: 50%;
+}
+.inner-area img{
+height: 100%;
+width: 100%;
+border-radius: 50%;
+object-fit: cover;
+}
+.card .name{                        
+font-size: 30px;
+font-weight: 900;
+color: rgb(126, 126, 126);
+margin: 10px 0 5px 0;
+}
+.card .about{
+color: #000000;
+font-weight: 400;
+font-size: 16px;
+font-style: italic;
+}
+.card .social-icons{
+margin: 15px 0 25px 0;
+}
+.social-icons a{
+position: relative;
+height: 40px;
+width: 40px;
+margin: 0 5px;
+display: inline-flex;
+text-decoration: none;
+border-radius: 50%;
+}                                      
+.social-icons a:hover::before,
+.card .icon:hover::before,
+.buttons button:hover:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+border-radius: 50%;
+background: #ecf0f3;
+box-shadow: inset -3px -3px 7px #ffffff,
+        inset 3px 3px 5px #ceced1;
+}
+.buttons button:hover:before{
+z-index: -1;
+border-radius: 5px;
+}
+
+.buttons button:hover{
+color: black;
+}                                      
+.social-icons a i{
+position: relative;
+z-index: 3;
+text-align: center;
+width: 100%;
+height: 100%;
+font-size: 20px;
+line-height: 35px;
+}
+.social-icons a:nth-last-child(1) i{
+color: #13d151;
+}
+.social-icons a:nth-last-child(2) i{
+color: #e6ba12;
+}
+.social-icons a:nth-last-child(3) i{    
+color: #1da9e9;
+}
+.social-icons a:nth-last-child(4) i{
+color: #f23400;
+}
+
+.card .buttons{
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+.buttons button{
+position: relative;
+width: 100%;
+border: none;
+outline: none;
+padding: 12px 0;
+color: #000000;                                                              
+font-size: 17px;
+font-weight: 400;
+border-radius: 5px;
+cursor: pointer;
+z-index: 4;
+}
+.buttons button:first-child{
+margin-right: 10px;
+}
+.buttons button:last-child{
+margin-left: 10px;
+}
+    </style>
 
   </head>
   <body>
@@ -96,11 +245,171 @@
     </nav>
     <h1>COMMUNICATION SKILLS EVERY ENTREPRENEUR MUST KNOW ABOUT</h1>
     <br /><br />
-    <h1><b class="title">Mentorship</b></h1> <br><br><br>
+    <h1><b class="title">Mentors</b></h1> <br><br><br>
 
+    <!-- 1st mentor details -->
+    <div class="card">
+      <div class="img-area">
+        <div class="inner-area">
+        <img src="Mentors/mentor-1.jpg" alt="">
+        </div>
+      </div>
+ 
+      <div class="name">
+        Bradly Haney</div>
+      <div class="about">
+        Co-founder @NodeBits    
+      </div>
+      <div class="social-icons">
+        <a href="#" class="gl"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="insta"><i class="fab fa-google"></i></a> 
+        <a href="#" class="yt"><i class="fab fa fa-whatsapp"></i></a>
+ 
+      </div>
+      <div class="buttons">
+        <button>Message</button>
+        <button>Subscribe</button>
+      </div>
+ 
+    </div>
 
+    <!-- 2nd mentor details -->
 
+    <div class="card">
+      <div class="img-area">
+        <div class="inner-area">
+          <img src="Mentors/mentor-2.jpg" alt="">
+        </div>
+      </div>
+ 
+      <div class="name">
+        Irwin Rollins</div>
+      <div class="about">
+Founder @Top Gear
+   </div>
+      <div class="social-icons">
+        <a href="#" class="gl"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="insta"><i class="fab fa-google"></i></a> 
+        <a href="#" class="yt"><i class="fab fa fa-whatsapp"></i></a>
+ 
+      </div>
+      <div class="buttons">
+        <button>Message</button>
+        <button>Subscribe</button>
+      </div>
+ 
+    </div>
 
+    <!-- 3rd mentor details -->
+
+    
+    <div class="card">
+      <div class="img-area">
+        <div class="inner-area">
+          <img src="Mentors/mentor-3.jpg" alt="">
+        </div>
+      </div>
+ 
+      <div class="name">Antone Lindsey</div>
+      <div class="about">
+        Founder @Infotank
+        Co-founder @Artek Technologies
+   </div>
+      <div class="social-icons">
+        <a href="#" class="gl"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="insta"><i class="fab fa-google"></i></a> 
+        <a href="#" class="yt"><i class="fab fa fa-whatsapp"></i></a>
+ 
+      </div>
+      <div class="buttons">
+        <button>Message</button>
+        <button>Subscribe</button>
+      </div>
+ 
+    </div>
+<br> <br> <br>
+    <!-- 4th mentor details -->
+    <div class="card">
+      <div class="img-area">
+        <div class="inner-area">
+          <img src="Mentors/mentor-4.jpg" alt="">
+        </div>
+      </div>
+ 
+      <div class="name">
+        Dustin Lam</div>
+      <div class="about">
+Co-founder @Autozone
+   </div>
+      <div class="social-icons">
+        <a href="#" class="gl"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="insta"><i class="fab fa-google"></i></a> 
+        <a href="#" class="yt"><i class="fab fa fa-whatsapp"></i></a>
+ 
+      </div>
+      <div class="buttons">
+        <button>Message</button>
+        <button>Subscribe</button>
+      </div>
+ 
+    </div>
+
+    <!-- 5th mentor details -->
+    <div class="card">
+      <div class="img-area">
+        <div class="inner-area">
+          <img src="Mentors/mentor-5.jpg" alt="">
+        </div>
+      </div>
+ 
+      <div class="name">Monalisha Roy</div>
+      <div class="about">
+Founder @GraphLabs   </div>
+      <div class="social-icons">
+        <a href="#" class="gl"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="insta"><i class="fab fa-google"></i></a> 
+        <a href="#" class="yt"><i class="fab fa fa-whatsapp"></i></a>
+ 
+      </div>
+      <div class="buttons">
+        <button>Message</button>
+        <button>Subscribe</button>
+      </div>
+ 
+    </div>
+
+    <!-- 5th mentor details -->
+
+    <div class="card">
+      <div class="img-area">
+        <div class="inner-area">
+          <img src="Mentors/mentor-6.jpg" alt="">
+        </div>
+      </div>
+ 
+      <div class="name">
+        Erich Richmond</div>
+      <div class="about">
+Founder @Nordic Builders 
+  </div>
+      <div class="social-icons">
+        <a href="#" class="gl"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="insta"><i class="fab fa-google"></i></a> 
+        <a href="#" class="yt"><i class="fab fa fa-whatsapp"></i></a>
+ 
+      </div>
+      <div class="buttons">
+        <button>Message</button>
+        <button>Subscribe</button>
+      </div>
+ 
+    </div>
 
 
   <script src="javascript.js"></script>
