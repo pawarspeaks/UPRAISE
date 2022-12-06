@@ -1,0 +1,56 @@
+
+.title {
+    font-family: 'JejuGothic';
+    font-style: normal;
+    font-weight: 1;
+    font-size: 50px;
+    line-height: 76px;
+    color: #000000;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 38%;
+}
+
+.raise-funds-button {
+    text-align: center;
+    margin-left: 36%;
+    font-size: larger;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.slide-in, .slide-in2{
+    animation: slide-in-animation 1s forwards;
+    opacity:0;
+  }
+  
+  .slide-in2{
+    animation-delay:.5s;
+
+  }
+  
+  @keyframes slide-in-animation {
+    from {opacity:0;
+    line-height:4em;}
+    to {opacity:1;
+    line-height:1em;}
+  }
+  
+  .slide-in-container{
+    margin-left: 15%;
+    overflow-y:hidden;
+    display:inline-block;
+    vertical-align:middle;
+    position:relative;
+    height:50px;
+    line-height:1.3em!important;
+  }
+  .slide-in-container2 {
+    margin-left: 40%;
+    overflow-y:hidden;
+    display:inline-block;
+    vertical-align:middle;
+    position:relative;
+    height:50px;
+    line-height:1.3em!important;
+  }
